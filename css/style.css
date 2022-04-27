@@ -14,22 +14,35 @@ button {
 header {
 	display: flex;
 	height: 50px;
+	padding: 0 16px 0 16px;
 	border-bottom: solid 2px lightgray;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	vertical-align: middle;
 }
 
 .header-left {
 	display: flex;
-	line-height: 100%
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .header-center {
 	display: flex;
-	line-height: 100%
+	justify-content: center;
+	font-size: 37px;
+	line-height: 100%;
+	font-family: "Patua One", serif;
+	font-weight: bold;
 }
 
 .header-right {
 	display: flex;
-	line-height: 100%
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .block::before {

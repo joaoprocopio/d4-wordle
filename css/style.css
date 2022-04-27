@@ -45,12 +45,147 @@ header {
 	align-items: center;
 }
 
+.game {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100% - 50px);
+	margin: 0 auto 0 auto;
+}
+
+.board-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.board {
+	display: grid;
+	width: 350px;
+	height: 420px;
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 5px;
+	padding: 10px;
+}
+
+.row-board {
+	display: inline-flex;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+}
+
+.block {
+	width: 62px;
+	height: 62px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid lightgray;
+	font-family: Arial;
+	font-size: 2rem;
+	line-height: 100%;
+	font-weight: bold;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.keyboard-container {
+	display: flex;
+	justify-content: center;
+}
+
+.game-keyboard {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 8px 0 8px;
+	width: 500px;
+	height: 200px;
+}
+
+.row-keyboard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto 8px;
+}
+
+.key {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 13.33px;
+	font-family: Arial;
+	font-weight: bold;
+	border: 0;
+	padding: 0;
+	margin: 0 6px 0 0;
+	height: 58px;
+	border-radius: 4px;
+	background-color: #d3d6da;
+	color: #000000;
+}
+
+.key-special {
+	display: flex;
+	flex: 1.5;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	border: 0;
+	padding: 0;
+	margin: 0 6px 0 0;
+	height: 58px;
+	border-radius: 4px;
+	background-color: #d3d6da;
+	color: #000000;
+}
+
+.fake-padding {
+	display: flex;
+	flex: 0.5;
+}
+
+.absent {
+	border: #787c7e;
+	background: #787c7e;
+	color: white;
+}
+
+.present {
+	border: #c9b458;
+	background: #c9b458;
+	color: white;
+}
+
+.correct {
+	border: #6aaa64;
+	background: #6aaa64;
+	color: white;
+}
+
 .block::before {
 	content: "";
+	display: inline-block;
 	padding-bottom: 100%;
 }
 
 .key::before {
-	content: " ";
+	content: "";
+	display: inline-block;
 	padding-bottom: 100%;
 }

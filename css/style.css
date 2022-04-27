@@ -1,0 +1,43 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+body {
+	color: black;
+	background-color: white;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+header {
+	display: flex;
+	height: 50px;
+	border-bottom: solid 2px lightgray;
+}
+
+.header-left {
+	display: flex;
+	line-height: 100%
+}
+
+.header-center {
+	display: flex;
+	line-height: 100%
+}
+
+.header-right {
+	display: flex;
+	line-height: 100%
+}
+
+.block::before {
+	content: "";
+	padding-bottom: 100%;
+}
+
+.key::before {
+	content: " ";
+	padding-bottom: 100%;
+}

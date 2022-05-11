@@ -1,3 +1,3 @@
-# d4-wordle
+# See the project finalized:
 
-link: https://joaoproc.github.io/d4-wordle/
+https://joaoproc.github.io/d4-wordle/
